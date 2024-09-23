@@ -3,13 +3,13 @@
 num1 = input("Enter the first number: ")
 num2 = input("Enter the second number: ")
 
-op = input("Choose the operation (+, -, *, /): ")
+operation = input("Choose the operation (+, -, *, /): ")
 
 num1 = float(num1)
 num2 = float(num2)
 
 
-match op:
+match operation:
     case  "+" : print(f"The result is {num1 + num2}.")
     case  "-" : print(f"The result is {num1 - num2}.")  
     case  "*" : print(f"The result is {num1 * num2}.")  
