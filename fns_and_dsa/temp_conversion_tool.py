@@ -28,10 +28,10 @@ try:
 
     type = input("Is this temperature in Celsius or Fahrenheit? (C/F): " )
 
-    if type == "C" : 
-        convert_to_fahrenheit(temp)
+    if type.upper() == "F" : 
+         convert_to_celsius(temp)
     else :
-        convert_to_celsius(temp)
+        convert_to_fahrenheit(temp)
 
 except :
     print("Invalid temperature. Please enter a numeric value.")
