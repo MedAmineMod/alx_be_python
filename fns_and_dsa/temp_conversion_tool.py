@@ -23,9 +23,16 @@ def convert_to_fahrenheit (celsius) :
 
 temp = input("Enter the temperature to convert: " )
 
-type = input("Is this temperature in Celsius or Fahrenheit? (C/F): " )
+try:
+    temp = float(temp) 
 
-if type == "C" : 
-    convert_to_fahrenheit(temp)
-else :
-    convert_to_celsius(temp)
+    type = input("Is this temperature in Celsius or Fahrenheit? (C/F): " )
+
+    if type == "C" : 
+        convert_to_fahrenheit(temp)
+    else :
+        convert_to_celsius(temp)
+
+except :
+    print("Invalid temperature. Please enter a numeric value.")
+
