@@ -1,4 +1,4 @@
-class Book : 
+class Book: 
 
     _is_checked_out = False
 
@@ -6,6 +6,7 @@ class Book :
         
         self.title = title 
         self.author = author
+
 
 
 class Library :
