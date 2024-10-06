@@ -12,11 +12,11 @@ class Book:
 class Library :
 
     def __init__(self):
-        self._books = {}
+        self._books = []
 
     def add_book(self , book ) : 
-        title =  book.title 
-        self._books[title] = book
+       
+        self._books.append(book) 
         
 
        
