@@ -22,26 +22,23 @@ class Library :
        
     
     def check_out_book (self , title) : 
-        self._books[title]._is_checked_out = True
-        if (self._books[title]._is_checked_out  == True ) :
-            print(self._books[title].title + " IS OUT" )
-        else : 
-            print(self._books[title].title + " IS IN" )
+       for book in self._books : 
+              if book.title == title :
+                book._is_checked_out = True
+                return
         
 
-    def return_book(self) : 
-        self._is_checked_out = False
-
-        if (self._books._is_checked_out  == True ) :
-            print(self._books.title + " IS OUT" )
-        else : 
-            print(self._books.title + " IS IN" )
+    def return_book( self, title) : 
+         for book in self._books : 
+              if book.title == title :
+                book._is_checked_out = False
+                return
             
 
     def list_available_books(self) :
-        for title in self._books :
-            if (self._books[title]._is_checked_out == False):
-                 print( f"{self._books[title].title} by {self._books[title].author}"  )
+         for book in self._books :
+            if (book._is_checked_out == False):
+                 print( f"{book.title} by {book.author}"  )
 
     
     
