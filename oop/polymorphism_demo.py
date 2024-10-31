@@ -24,7 +24,3 @@ class Circle(Shape):
         return  math.pi * self.radius ** 2
         
 
-
-earth =  Circle(23)
-
-print(earth.area())
