@@ -4,6 +4,10 @@ class Book:
         self.title = title 
         self.author =  author
         
+    def __str__(self):
+        
+        return f"{self.title} by {self.author}"
+        
         
 
     
@@ -39,6 +43,6 @@ class Library:
 
 paper_book = PrintBook("hamde" , "amuine" , 22)
 
-print(paper_book.__class__.__name__)
+print(paper_book)
 
 
